@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 03 </title>
+</head>
+<body>
+
+        <script>
+
+    alert("Welcome to Web Technologies Lab!");
+    console.log("Welcome Message in Console");
+    document.write("<h3>Welcome Message in Webpage</h3>");
+
+    var studentName = "Ovi";
+    var studentAge = 22;
+
+    var nextYearAge = studentAge + 1;
+
+    document.write("Name: " + studentName + "<br>");
+    document.write("Current Age: " + studentAge + "<br>");
+    document.write("Next Year Age: " + nextYearAge + "<br><br>");
+
+    var num1 = prompt("Enter First Number:");
+    var num2 = prompt("Enter Second Number:");
+
+    num1 = Number(num1);
+    num2 = Number(num2);
+
+    document.write("Sum: " + (num1 + num2) + "<br>");
+    document.write("Difference: " + (num1 - num2) + "<br>");
+    document.write("Product: " + (num1 * num2) + "<br><br>");
+
+    var number = prompt("Enter a number to check Even or Odd:");
+    number = Number(number);
+
+    if (number % 2 == 0) {
+        document.write(number + " is Even");
+    } else {
+        document.write(number + " is Odd");
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+
+    <script>
+
+    var courses = ["Math", "Physics", "Web Tech", "AI", "Database"];
+
+    document.write("Course List:<br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    courses.push("Machine Learning");
+
+    document.write("<br>After Adding New Course:<br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    document.write("<br>Array Length: " + courses.length + "<br>");
+
+    courses.pop();
+    courses.unshift("English");
+
+    document.write("<br>Final Array:<br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    var student = {
+        name: "Ovi",
+        id: "23-54950-3",
+        department: "CSE",
+        cgpa: 3.66
+    };
+
+    document.write("<br>Student Info:<br>");
+    document.write("Name: " + student.name + "<br>");
+    document.write("ID: " + student.id + "<br>");
+    document.write("Department: " + student.department + "<br>");
+    document.write("CGPA: " + student.cgpa + "<br>");
+
+    var students = [
+        {name: "Ovi", id: "23-54950-3", department: "CSE"},
+        {name: "mitu", id: "23-54949-3", department: "CSE"},
+        {name: "Karim", id: "23-54952-3", department: "CSE"}
+    ];
+
+    document.write("<br>All Students:<br>");
+    for (var i = 0; i < students.length; i++) {
+        document.write(
+            "Name: " + students[i].name +
+            ", ID: " + students[i].id +
+            ", Dept: " + students[i].department + "<br>"
+        );
+    }
+
+</script>
+    
+</body>
+</html>

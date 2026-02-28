@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task03</title>
+</head>
+<body>
+        <script>
+
+    function calculateSum(a, b) {
+        return a + b;
+    }
+
+    var result = calculateSum(10, 30);
+    document.write("Sum using function: " + result + "<br><br>");
+
+    document.write("Numbers 1 to 10:<br>");
+    for (var i = 1; i <= 10; i++) {
+        document.write(i + " ");
+    }
+
+    document.write("<br><br>Even numbers 1 to 20:<br>");
+    var j = 1;
+    while (j <= 20) {
+        if (j % 2 == 0) {
+            document.write(j + " ");
+        }
+        j++;
+    }
+
+    document.write("<br><br>");
+
+    
+    var fullName = "Ovi Chowdhury";
+
+    document.write("Uppercase: " + fullName.toUpperCase() + "<br>");
+    document.write("Length: " + fullName.length + "<br>");
+
+    var firstName = fullName.split(" ")[0];
+    document.write("First Name: " + firstName + "<br><br>");
+
+    function checkLength() {
+        var text = prompt("Enter a string:");
+        if (text.length > 5) {
+            document.write("String length is greater than 5");
+        } else {
+            document.write("String length is 5 or less");
+        }
+    }
+
+    checkLength();
+    </script>
+    
+</body>
+</html>
